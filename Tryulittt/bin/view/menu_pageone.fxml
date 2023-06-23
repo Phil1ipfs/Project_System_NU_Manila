@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Ap1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #690700;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.pageoneController">
+   <children>
+      <ImageView fx:id="bgimg1" blendMode="MULTIPLY" fitHeight="600.0" fitWidth="900.0" layoutX="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/bgpizza%201.png" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <Pane fx:id="P1" cache="true" layoutX="37.0" layoutY="38.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="525.0" prefWidth="825.0" style="-fx-background-color: #3F0505; -fx-background-radius: 40;">
+         <children>
+            <ImageView fx:id="bgimg2" blendMode="MULTIPLY" depthTest="DISABLE" fitHeight="500.0" fitWidth="802.0" layoutX="12.0" layoutY="12.0" pickOnBounds="true" style="-fx-background-radius: 40;">
+               <image>
+                  <Image url="@../images/bgpizza%201.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Pimg1" fitHeight="150.0" fitWidth="200.0" layoutX="38.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/IMG1.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="Pname1" layoutX="35.0" layoutY="199.0" text="Classic Spinach Pizza Americana" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="Pprice1" layoutX="38.0" layoutY="220.0" text="₱551" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="Checkoutbtn1" accessibleRoleDescription="IMAGE_VIEW" layoutX="104.0" layoutY="219.0" mnemonicParsing="false" onAction="#Spinach">
+               <graphic>
+                  <ImageView fx:id="crt1" fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/cart.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fx:id="Pimg2" fitHeight="150.0" fitWidth="200.0" layoutX="313.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/IMG2.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="Pname2" layoutX="300.0" layoutY="199.0" text="Classic Margherita Pizza Americana" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="Pprice2" layoutX="313.0" layoutY="220.0" text="₱552" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="Checkoutbtn2" layoutX="379.0" layoutY="219.0" mnemonicParsing="false" onAction="#Margherita">
+               <graphic>
+                  <ImageView fx:id="crt2" fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/cart.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fx:id="Pimg3" fitHeight="138.0" fitWidth="200.0" layoutX="591.0" layoutY="57.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/IMG3.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="Pname3" layoutX="589.0" layoutY="199.0" text="Classic Cheese Pizza Americana" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="Pprice3" layoutX="589.0" layoutY="220.0" text="₱553" textFill="#fcfcfc">
+               <font>
+                  <Font name="Bauhaus 93" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="Pimg4" fitHeight="150.0" fitWidth="200.0" layoutX="38.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/IMG4.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="Pname4" layoutX="28.0" layoutY="412.0" text="Classic Pepperoni Pizza Americana" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="Pprice4" layoutX="38.0" layoutY="438.0" text="₱554" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="Checkoutbtn4" layoutX="104.0" layoutY="437.0" mnemonicParsing="false" onAction="#Pepperoni">
+               <graphic>
+                  <ImageView fx:id="crt4" fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/cart.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fx:id="Pimg5" fitHeight="150.0" fitWidth="200.0" layoutX="313.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/IMG5.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="Pname5" layoutX="294.0" layoutY="414.0" text="Classic Truffle Four Cheese Pizza Americana" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="Pprice5" layoutX="313.0" layoutY="438.0" text="₱555" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="Checkoutbtn5" layoutX="379.0" layoutY="437.0" mnemonicParsing="false" onAction="#Truffle">
+               <graphic>
+                  <ImageView fx:id="crt5" fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/cart.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fx:id="Pimg6" fitHeight="144.0" fitWidth="200.0" layoutX="591.0" layoutY="262.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/IMG6.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="Pname6" layoutX="577.0" layoutY="414.0" text="Classic Spinach &amp; Shrimp Pizza Americana" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="Pprice6" layoutX="591.0" layoutY="438.0" text="₱556" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="Checkoutbtn6" layoutX="657.0" layoutY="437.0" mnemonicParsing="false" onAction="#Sshrimp">
+               <graphic>
+                  <ImageView fx:id="crt6" fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/cart.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="419.0" layoutY="487.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+               <image>
+                  <Image url="@../images/Parrow.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="Nextpgbtn2" layoutX="417.0" layoutY="485.0" mnemonicParsing="false" onAction="#Pagetwo" opacity="0.0" prefHeight="25.0" prefWidth="25.0" />
+            <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="385.0" layoutY="487.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+               <image>
+                  <Image url="@../images/Parrow.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="Nextpgbtn1" layoutX="384.0" layoutY="485.0" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="25.0" />
+            <Button fx:id="Checkoutbtn3" layoutX="657.0" layoutY="219.0" mnemonicParsing="false" onAction="#Cheese">
+               <graphic>
+                  <ImageView fx:id="crt3" fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/cart.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

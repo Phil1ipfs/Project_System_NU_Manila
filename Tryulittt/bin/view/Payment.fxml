@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #690700;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PaymentMethodController">
+   <children>
+      <ImageView fx:id="img1" blendMode="MULTIPLY" fitHeight="600.0" fitWidth="900.0" layoutX="6.0">
+         <image>
+            <Image url="@../images/bgpizza%201.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="rect1" arcHeight="70.0" arcWidth="50.0" fill="#4b0202" height="520.0" layoutX="421.0" layoutY="53.0" stroke="#4b0202" strokeType="INSIDE" width="422.0" />
+      <ImageView fx:id="img2" fitHeight="246.0" fitWidth="343.0" layoutX="44.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/gcash1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img3" fitHeight="246.0" fitWidth="343.0" layoutX="37.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/paymaya1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img4" fitHeight="49.0" fitWidth="243.0" layoutX="102.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/gcash2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img5" fitHeight="49.0" fitWidth="245.0" layoutX="86.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/maya2.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label1" layoutX="152.0" layoutY="32.0" prefHeight="28.0" prefWidth="164.0" text="Scan To Pay" textFill="#fffdfd">
+         <font>
+            <Font name="Bauhaus 93" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="label2" layoutX="131.0" layoutY="313.0" prefHeight="9.0" prefWidth="156.0" text="Scan To Pay" textFill="#fffdfd">
+         <font>
+            <Font name="Bauhaus 93" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img6" fitHeight="141.0" fitWidth="117.0" layoutX="6.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/qr.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img7" fitHeight="141.0" fitWidth="117.0" layoutX="310.0" layoutY="444.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/qr.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img8" fitHeight="167.0" fitWidth="269.0" layoutX="510.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/paypal1.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label3" layoutX="456.0" layoutY="188.0" prefHeight="31.0" prefWidth="227.0" text="Enter Card Number" textFill="#f2f2f2">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cardNumberField" layoutX="454.0" layoutY="223.0" prefHeight="40.0" prefWidth="356.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></TextField>
+      <Label fx:id="label4" layoutX="451.0" layoutY="278.0" prefHeight="31.0" prefWidth="198.0" text="Expiry Date" textFill="#f2f2f2">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="label5" layoutX="649.0" layoutY="278.0" prefHeight="31.0" prefWidth="78.0" text="CVV" textFill="#f2f2f2">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cvvField" layoutX="649.0" layoutY="313.0" prefHeight="40.0" prefWidth="156.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></TextField>
+      <DatePicker fx:id="expiryDatePicker" layoutX="451.0" layoutY="313.0" prefHeight="40.0" prefWidth="156.0" />
+      <Label fx:id="label6" layoutX="454.0" layoutY="367.0" prefHeight="38.0" prefWidth="210.0" text="Card Holder Name" textFill="#f2f2f2">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameHolderField" layoutX="454.0" layoutY="405.0" prefHeight="40.0" prefWidth="356.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></TextField>
+      <Button fx:id="addCardButton" layoutX="550.0" layoutY="514.0" mnemonicParsing="false" onAction="#addCard" prefHeight="40.0" prefWidth="178.0" style="-fx-background-color: #213057;" text="Add Card" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <CheckBox fx:id="saveCardDetailsCheckbox" layoutX="456.0" layoutY="464.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="245.0" text="Save Card Details." textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="Ap4" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #690700;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.checkoutpage_margheritaController">
+   <children>
+      <ImageView fx:id="Cbg3" blendMode="MULTIPLY" fitHeight="600.0" fitWidth="900.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/bgpizza%201.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="Cp2" layoutX="38.0" layoutY="38.0" prefHeight="525.0" prefWidth="825.0" style="-fx-background-color: #3F0505; -fx-background-radius: 40;">
+         <children>
+            <ImageView fx:id="Cbg4" blendMode="MULTIPLY" fitHeight="498.0" fitWidth="803.0" layoutX="16.0" layoutY="5.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/bgpizza%201.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Cpimg2" fitHeight="215.0" fitWidth="340.0" layoutX="99.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/IMG2.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="Cpname2" layoutX="110.0" layoutY="288.0" prefHeight="24.0" prefWidth="293.0" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="Cpprice2" layoutX="110.0" layoutY="318.0" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="25.0" />
+               </font>
+            </Label>
+            <Text fx:id="Cdes2" fill="WHITE" layoutX="110.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Indulge in the timeless elegance of the Classic Margherita Pizza Americana, where simplicity reigns supreme. Immerse yourself in the pure delight of San Marzano tomato sauce, creamy buffalo mozzarella, and aromatic fresh basil, expertly baked to create a harmonious symphony of flavors that pays homage to the origins of this beloved Italian favorite." wrappingWidth="294.0234375">
+               <font>
+                  <Font name="Bookshelf Symbol 7" size="14.0" />
+               </font></Text>
+            <ChoiceBox fx:id="Ccbox2" layoutX="554.0" layoutY="143.0" prefWidth="150.0" />
+            <Label fx:id="Cslices2" layoutX="479.0" layoutY="144.0" text="Slices :" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="Cins2" layoutX="479.0" layoutY="239.0" text="Instructions :" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="20.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="Ctxtbox2" layoutX="477.0" layoutY="263.0" opacity="0.63" prefHeight="122.0" prefWidth="233.0" />
+            <Button fx:id="Ccheckoutbtn2" blendMode="SCREEN" layoutX="483.0" layoutY="436.0" mnemonicParsing="false" onAction="#Magarita" prefHeight="30.0" prefWidth="219.0" style="-fx-background-radius: 10;" text="CHECKOUT">
+               <font>
+                  <Font name="Bauhaus 93" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

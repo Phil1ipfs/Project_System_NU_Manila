@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorpane6" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #690700;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SettingsController">
+   <children>
+      <ImageView blendMode="MULTIPLY" fitHeight="835.0" fitWidth="947.0" layoutX="-38.0" layoutY="-16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/bgpizza%201.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="-38.0" layoutY="-1.0" prefHeight="600.0" prefWidth="502.0" style="-fx-background-radius: 70; -fx-background-color: #700606;">
+         <children>
+            <ImageView blendMode="MULTIPLY" fitHeight="219.0" fitWidth="202.0" layoutX="150.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/avatarProfile.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="97.0" layoutY="235.0" prefHeight="62.0" prefWidth="337.0" style="-fx-background-color: #7d1b1b; -fx-background-radius: 30;">
+               <children>
+                  <Text fx:id="profileNameText" fill="WHITE" layoutX="-15.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="text" textAlignment="CENTER" wrappingWidth="344.80340576171875">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="129.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="95.0" layoutY="305.0" prefHeight="62.0" prefWidth="337.0" style="-fx-background-color: #7d1b1b; -fx-background-radius: 30;">
+               <children>
+                  <Text fx:id="profileEmailText" fill="WHITE" layoutX="-31.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="text" textAlignment="CENTER" wrappingWidth="397.24781799316406">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="143.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="99.0" layoutY="375.0" prefHeight="62.0" prefWidth="331.0" style="-fx-background-color: #7d1b1b; -fx-background-radius: 30;">
+               <children>
+                  <Text fx:id="profileMobileNo" fill="WHITE" layoutX="-27.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="text" textAlignment="CENTER" wrappingWidth="381.6495513916015">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="114.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile Number">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="103.0" layoutY="446.0" prefHeight="62.0" prefWidth="331.0" style="-fx-background-color: #7d1b1b; -fx-background-radius: 30;">
+               <children>
+                  <Text fx:id="profilePasswordText" fill="WHITE" layoutX="-46.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="text" textAlignment="CENTER" wrappingWidth="386.58119201660156">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="121.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <ImageView fitHeight="130.0" fitWidth="90.0" layoutX="34.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/pizzaLogo-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="LogoHomepage" layoutX="39.0" layoutY="16.0" mnemonicParsing="false" onAction="#BackToHomePage" opacity="0.0" prefHeight="80.0" prefWidth="93.0" text="Button" />
+         </children>
+      </Pane>
+      <ImageView blendMode="MULTIPLY" fitHeight="46.0" fitWidth="36.0" layoutX="843.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logout.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="doorButton" layoutX="837.0" layoutY="27.0" mnemonicParsing="false" onAction="#LOGOUTDOOR" opacity="0.0" prefHeight="60.0" prefWidth="51.0" text="Button" />
+   </children>
+</AnchorPane>

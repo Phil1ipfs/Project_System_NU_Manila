@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #690700;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CheckOutController">
+   <children>
+      <ImageView fx:id="img1" blendMode="MULTIPLY" fitHeight="600.0" fitWidth="900.0">
+         <image>
+            <Image url="@../images/bgpizza%201.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="70.0" arcWidth="50.0" fill="#4b0202" height="516.0" layoutX="120.0" layoutY="42.0" stroke="#6b1111" strokeType="INSIDE" width="649.0" />
+      <Label layoutX="339.0" layoutY="58.0" prefHeight="42.0" prefWidth="395.0" text="Shipping Info" textFill="#fffefe">
+         <font>
+            <Font name="Arial Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="houseNumberField" layoutX="236.0" layoutY="127.0" prefHeight="48.0" prefWidth="429.0" promptText=" House No." />
+      <TextField fx:id="streetField" layoutX="236.0" layoutY="201.0" prefHeight="48.0" prefWidth="429.0" promptText="Street" />
+      <TextField fx:id="cityField" layoutX="236.0" layoutY="276.0" prefHeight="48.0" prefWidth="429.0" promptText="City" />
+      <TextField fx:id="zipCodeField" layoutX="236.0" layoutY="349.0" prefHeight="48.0" prefWidth="429.0" promptText="Zip Code" />
+      <TextField fx:id="mobileNumberField" layoutX="236.0" layoutY="420.0" prefHeight="48.0" prefWidth="429.0" promptText="Mobile Number" />
+      <Button fx:id="checkButton" layoutX="367.0" layoutY="491.0" mnemonicParsing="false" onAction="#handleCheckoutButton" prefHeight="42.0" prefWidth="156.0" style="-fx-background-color: #690700;" text="Checkout" textFill="#fff9f9">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
